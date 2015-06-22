@@ -1,0 +1,29 @@
+<%= form_for(@taquilla) do |f| %>
+  <% if @taquilla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taquilla.errors.count, "error") %> prohibited this taquilla from being saved:</h2>
+
+      <ul>
+      <% @taquilla.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pelicula %><br>
+    <%= f.text_field :pelicula %>
+  </div>
+  <div class="field">
+    <%= f.label :valoracion %><br>
+    <%= f.text_area :valoracion %>
+  </div>
+  <div class="field">
+    <%= f.label :comentario %><br>
+    <%= f.text_area :comentario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

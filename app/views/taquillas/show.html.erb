@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pelicula:</strong>
+  <%= @taquilla.pelicula %>
+</p>
+
+<p>
+  <strong>Valoracion:</strong>
+  <%= @taquilla.valoracion %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @taquilla.comentario %>
+</p>
+
+<%= link_to 'Edit', edit_taquilla_path(@taquilla) %> |
+<%= link_to 'Back', taquillas_path %>

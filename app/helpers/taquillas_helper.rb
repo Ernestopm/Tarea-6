@@ -1,0 +1,2 @@
+module TaquillasHelper
+end
